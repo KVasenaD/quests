@@ -1,0 +1,312 @@
+.head {
+  text-align: center;
+  padding: 0 10px;
+}
+.head h1 {
+  font-size: 40px;
+}
+.characters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 15px;
+}
+.character h4 {
+  font-size: 18px;
+}
+
+.characters .character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+}
+h2 {
+  font-size: 27px;
+  color: white;
+}
+.about p {
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(220, 213, 213);
+  margin: 10px 0;
+}
+h2,
+p {
+  text-align: left;
+}
+.about section {
+  border-bottom: 1px solid white;
+  padding: 10px 30px;
+}
+button {
+  cursor: pointer;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 15px;
+}
+.contacts p {
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+}
+span {
+  color: lightsalmon;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.price button {
+  cursor: default;
+}
+.feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button.price {
+  width: 50px;
+  height: 25px;
+  margin: 4px;
+  color: white;
+  border: none;
+}
+.feedbackBtn {
+  background-color: rgb(241, 94, 94);
+  border: 1px solid rgb(241, 94, 94);
+}
+button.feedbackBtn {
+  width: 120px;
+  border-radius: 5px;
+}
+button.feedbackBtn:hover {
+  background: none;
+}
+button.feedbackBtn:hover p {
+  color: white;
+}
+button.feedbackBtn:active {
+  background: rgba(241, 94, 94, 0.497);
+}
+:disabled {
+  color: #5f6363;
+  background-color: #3d3f3f;
+}
+.purple {
+  background-color: rgb(121, 15, 226);
+}
+.red {
+  background-color: rgb(241, 94, 94);
+}
+.orange {
+  background-color: rgb(228, 126, 86);
+}
+.green {
+  background-color: rgb(86, 186, 86);
+}
+.blue {
+  background-color: rgb(65, 160, 220);
+}
+.darkBlue {
+  background-color: rgb(48, 27, 205);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  animation-name: appear;
+  animation-duration: 300ms;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 550px;
+  background: #2e2f2f;
+  border: 2px solid white;
+  position: relative;
+  margin: 0 20px;
+  max-height: calc(100vh - 40px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+
+.modal-header,
+.modal-footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+.modal-header {
+  border-bottom: 1px solid #dbdbdb;
+  justify-content: space-between;
+}
+.modal-footer {
+  padding: 0 1rem 1rem 1rem;
+  justify-content: center;
+}
+.modal-footer button {
+  background-color: rgb(228, 126, 86);
+  width: 157px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#form {
+  border-bottom: none;
+}
+.modal-close {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+  color: rgb(228, 126, 86);
+}
+
+.modal-body {
+  overflow: auto;
+}
+.modal-content {
+  padding: 1rem;
+}
+.modal-content section {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.modal-content section span {
+  color: white;
+}
+.modal-title {
+  margin: 0;
+}
+.phone,
+.adress {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+}
+.btnPrice {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 25px;
+}
+.buttons a {
+  border: 2px solid rgb(241, 94, 94);
+  padding: 0px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 43px;
+  border-radius: 10px;
+}
+.buttons a:hover {
+  background-color: rgb(241, 94, 94);
+}
+.buttons a:first-child {
+  background-color: rgb(241, 94, 94);
+}
+.buttons a:first-child:hover {
+  background: none;
+}
+.buttons a:active, .buttons a:first-child:active {
+  background: rgba(241, 94, 94, 0.497);
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .head h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about section {
+    padding: 5px 10px;
+  }
+  .slick-list {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .price {
+    flex-direction: column;
+    align-items: start;
+  }
+  .characters {
+    flex-direction: column;
+  }
+  .characters .character {
+    flex-direction: row;
+    column-gap: 20px;
+    border-bottom: 1px solid darkgray;
+  }
+  .characters .character:last-child {
+    border: none;
+  }
+  .buttons {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

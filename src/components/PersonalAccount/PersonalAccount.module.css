@@ -1,0 +1,102 @@
+button.change,
+button.remove {
+  width: 80px;
+}
+button.exit {
+  width: 80px;
+  font-size: 20px;
+}
+button.exit,
+button.change {
+  border-radius: 8px;
+  background-color: rgb(241, 94, 94);
+}
+button.remove {
+  border-radius: 8px;
+  border: 1px solid rgb(241, 94, 94);
+  background: none;
+}
+button.remove:hover {
+  background-color: rgb(241, 94, 94);
+}
+button.exit:hover,
+button.change:hover {
+  background: none;
+  border: 1px solid rgb(241, 94, 94);
+}
+.commentsBox button:active {
+  background: rgba(241, 94, 94, 0.497);
+}
+section.commentsBox {
+  background-color: #2e2f2f;
+  padding: 20px;
+  margin: 20px 0;
+}
+section.commentsBox h3 {
+  text-align: center;
+  color: rgb(228, 126, 86);
+}
+
+.grid_init {
+  max-width: 100%;
+  margin: auto;
+}
+.grid_init:first-child {
+  padding-left: 0px;
+}
+.grid_init:last-child {
+  padding-right: 0px;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: repeat(auto-fill, minmax(255px, 255px));
+}
+.box_init {
+  color: #fff;
+  background-color: #222223;
+  padding: 15px;
+  border-radius: 6px;
+  min-height: 50px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.questName {
+  margin: 10px 0;
+}
+.questName a {
+  text-decoration: none;
+}
+.questName h3:hover {
+  color: white;
+}
+.questName h3 {
+  font-size: 18px;
+  line-height: 20px;
+  mix-blend-mode: normal;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin: 10px 0;
+  word-break: break-word;
+}
+.comment p {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(220, 213, 213);
+  margin: 10px 0;
+}
+@media only screen and (max-width: 569px) {
+  .grid_init {
+    width: 255px;
+  }
+}

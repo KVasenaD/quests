@@ -1,0 +1,25 @@
+.slick {
+  width: 500px;
+  margin: 40px auto;
+  height: 300px;
+}
+@media only screen and (max-width: 550px) {
+  .slick {
+    width: 400px;
+    margin: 10px auto;
+    height: 270px;
+  }
+  .slick img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .slick {
+    width: 300px;
+    margin: 5px auto;
+    height: 220px;
+  }
+  .slick img {
+    width: 300px;
+  }
+}

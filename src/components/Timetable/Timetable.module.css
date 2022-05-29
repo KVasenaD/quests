@@ -1,0 +1,60 @@
+.date {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, auto);
+}
+.time {
+  display: grid;
+  grid-gap: 5px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 50px));
+}
+.time button {
+  cursor: pointer;
+}
+section.timetable {
+  border: none;
+  display: grid;
+  grid-gap: 5px;
+}
+.grid_init {
+  max-width: 100%;
+  margin: auto;
+}
+.grid_init:first-child {
+  padding-left: 0px;
+}
+.grid_init:last-child {
+  padding-right: 0px;
+}
+
+.rows {
+  display: grid;
+  grid-template-columns: 130px auto;
+  align-items: center;
+  column-gap: 9px;
+}
+@media only screen and (max-width: 950px) {
+  .rows {
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .rows .date p {
+    font-size: 15px;
+  }
+  .date {
+    grid-gap: 0px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .rows {
+    display: block;
+  }
+  .date {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+  }
+}

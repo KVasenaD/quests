@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Noto Serif';
+  src: local('Noto Serif'),
+    url(./fonts/Noto_Serif/NotoSerif-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  min-width: 350px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

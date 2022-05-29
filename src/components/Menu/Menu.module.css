@@ -1,0 +1,28 @@
+.header {
+  background-color: black;
+  min-height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 3px 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  column-gap: 10px;
+  color: lightblue;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.auth {
+  width: 21px;
+}

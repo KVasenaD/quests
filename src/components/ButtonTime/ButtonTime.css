@@ -1,0 +1,30 @@
+button {
+  width: 50px;
+  height: 25px;
+  margin: 4px;
+  color: white;
+  border: none;
+}
+
+:disabled {
+  color: #5f6363;
+  background-color: #3d3f3f;
+}
+.purple {
+  background-color: rgb(121, 15, 226);
+}
+.red {
+  background-color: rgb(241, 94, 94);
+}
+.orange {
+  background-color: rgb(228, 126, 86);
+}
+.green {
+  background-color: rgb(86, 186, 86);
+}
+.blue {
+  background-color: rgb(65, 160, 220);
+}
+.darkBlue {
+  background-color: rgb(48, 27, 205);
+}
